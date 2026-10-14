@@ -88,7 +88,7 @@ a{color:inherit}
 .group-head{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:8px}
 .group-head h2{font:700 1.6rem/1 var(--font-condensed);margin:0}
 .entry{display:grid;gap:14px;padding:22px 0;border-bottom:1px solid var(--line)}
-@media(min-width:760px){.entry{grid-template-columns:230px 1fr;gap:32px}}
+@media(min-width:760px){.entry:has(.thumb){grid-template-columns:230px 1fr;gap:32px}}
 .entry[hidden],.group[hidden]{display:none}
 .entry h3{font:700 1.3rem/1.2 var(--font-condensed);margin:0 0 4px}
 .entry .meta{margin:0 0 8px}
