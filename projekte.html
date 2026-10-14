@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projekte · Laurin Obermaier</title>
+<meta name="description" content="Laurin Obermaier, Entwicklungsingenieur für Software, Hardware und Prototyping aus Kusterdingen bei Tübingen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="projekte.html" aria-current="page">Projekte</a>
+  </nav>
+
+  <section>
+    <span class="eyebrow">Projekte</span>
+    <h2>Auswahl aus Beruf, Nebengewerbe und Studium</h2>
+    <p class="lede">Beruflich heißt angestellt oder im Nebengewerbe als Auftrag und Eigenprodukt. Privat umfasst eigene Projekte und das Studium. Innerhalb davon sortiert nach Schwerpunkt.</p>
+    <div class="subnav">
+      <button type="button" data-r="beruflich" aria-pressed="true">Beruflich</button>
+      <button type="button" data-r="privat">Privat</button>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Steuergeräte, Werkzeuge und Oberflächen</span>
+    <h2>Software</h2>
+    <div class="projekt" data-r="beruflich">
+      <span class="tag">Beruflich</span>
+      <h3>Flashsoftware und Produktionsstation</h3>
+      <p>Eigenes Werkzeug in Python, das alle Komponenten eines E-Bike-Systems über CAN und UDS programmiert, vom Display über Remote und zentralen Controller bis zu Batterie und Motor. Im Einsatz von der Entwicklung über Fahrtests bis zur End-of-Line-Programmierung in der Produktion. Später die zugehörige Produktionsstation für Programmierung, Updates und Qualitätsprüfung entwickelt und beim Kunden betreut. Entwicklungspartner für E-Bike-Systeme, 2022 bis 2026.</p>
+    </div>
+    <div class="projekt" data-r="beruflich">
+      <span class="tag">Beruflich</span>
+      <h3>Seriensoftware für die E-Bike-Remote</h3>
+      <p>Sicherheitskritische Steuergerätesoftware in C und C++ nach ISO 13849 für die Bedieneinheit am Lenker, CAN-Kommunikation mit dem restlichen System, Entwicklung im Scrum-Team mit Reviews, Unit- und Integrationstests bis zur Serienfreigabe. Entwicklungspartner für E-Bike-Systeme, 2022 bis 2024.</p>
+    </div>
+    <div class="projekt" data-r="beruflich">
+      <span class="tag">Auftrag</span>
+      <h3>Maschinensteuerung für einen industriellen 3D-Drucker</h3>
+      <p>Steuerung auf einem Linux-SoC mit Touch-Bedienung direkt an der Maschine, Auftragsverwaltung und maschinenspezifischen Funktionen. Software und zugehörige Hardware komplett selbst entwickelt, läuft produktiv beim Kunden. Kundenauftrag über BuddsterIndustries.</p>
+    </div>
+    <div class="projekt" data-r="beruflich">
+      <span class="tag">Auftrag</span>
+      <h3>Lichtsteuerung für Modellflugzeuge</h3>
+      <p>Acht Lichtkanäle für Flugshows, komplette Softwareentwicklung auf FreeRTOS, Bedienung über WLAN mit einer React-Oberfläche auf dem Smartphone. Geht als Produkt auf den Markt. Kundenauftrag über BuddsterIndustries.</p>
+    </div>
+    <div class="projekt" data-r="privat">
+      <span class="tag">Studium</span>
+      <h3>Umfrage-App für Vorlesungen</h3>
+      <p>Masterprojekt über zwei Semester. Projektleitung und Lead-Entwicklung einer React-Native-App für Live-Umfragen in Vorlesungen im neunköpfigen Team, Bedienkonzept mit dem betreuenden Professor abgestimmt, im laufenden Vorlesungsbetrieb getestet und danach überarbeitet. Hochschule Reutlingen.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Elektronik, Prüfstände und Systeme</span>
+    <h2>Hardware</h2>
+    <div class="projekt" data-r="beruflich">
+      <span class="tag">Beruflich</span>
+      <h3>Prüfstände für E-Bike-Antriebe</h3>
+      <p>Drei Antriebsprüfstände für zwei verschiedene Antriebe und ein Batterieprüfstand, Dauerlauf und HIL. Konzeption und Realisierung über Mechanik, Elektrik und Software hinweg, Konstruktion in Fusion 360, Temperaturregelung und Motorsteuerung, Monitoring mit Prometheus und Grafana und vollautomatische Auswertung. Mehrere hundert Tests an Prototypen zu Drehmoment, Reichweite und Getriebe. Entwicklungspartner für E-Bike-Systeme, neben der Vorausentwicklung.</p>
+    </div>
+    <div class="projekt" data-r="beruflich">
+      <span class="tag">Beruflich</span>
+      <h3>Laserbasiertes Entertainment-System</h3>
+      <p>Produktentwicklung eines laserbasierten Entertainment-Systems für die Heimanwendung in der Luxusklasse. Mikrocontroller-Schaltungen mit Batteriemanagement, Gehäuse und Maschinenteile konstruiert, Prototypen im eigenen 3D-Druck und über externe Zerspanung, Koordination der Zulieferer und Projektleitung. Heusel Innovations, 2022.</p>
+    </div>
+    <div class="projekt" data-r="beruflich">
+      <span class="tag">Eigenprodukt</span>
+      <h3>Camper-Bordsystem</h3>
+      <p>Modulares Eigenprodukt mit acht PWM-Lichtkanälen und Batteriespannungsmessung als Basis, erweiterbar um Module für Lüfter, RGB-LEDs und Strommessung. Bedienung über eine React-Oberfläche auf dem Smartphone. BuddsterIndustries.</p>
+    </div>
+    <div class="projekt" data-r="privat">
+      <span class="tag">Studium</span>
+      <h3>Batteriemanagement für einen Rover</h3>
+      <p>Masterthesis. Steuer- und Messelektronik mit Hall-Stromsensor, ausgelegt für den Anschluss an den realen Rover. Die Software schätzt den Ladezustand, bewertet geplante Missionen aus einem digitalen Zwilling und meldet deren Machbarkeit in Prozent zurück. Hochschule Reutlingen.</p>
+    </div>
+    <div class="projekt" data-r="privat">
+      <span class="tag">Privat</span>
+      <h3>Smarthome-Displays</h3>
+      <p>Mehrere eigene Bediendisplays fürs Smarthome, zuletzt ein rundes Display mit Drehencoder und Touch, das Musikwiedergabe und Licht direkt steuert. Aufbau mit zwei Chips, Elektronik, Gehäuse und Software selbst entwickelt.</p>
+    </div>
+    <div class="projekt" data-r="privat">
+      <span class="tag">Privat</span>
+      <h3>Vliesfilter fürs Meerwasseraquarium</h3>
+      <p>Vliesfilter mit elektrischer Ansteuerung und Anbindung ans Smarthome, konstruiert, simuliert, gedruckt und gebaut. Anders als die am Markt erhältlichen Vliesfilter im Betrieb nicht zu hören.</p>
+    </div>
+    <div class="projekt" data-r="privat">
+      <span class="tag">Privat</span>
+      <h3>Leiterplatten</h3>
+      <p>Eigene Leiterplatten entworfen und über Dienstleister fertigen lassen, für die privaten Steuerungen.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Konstruktion, Musterbau und Erprobung</span>
+    <h2>Prototyping</h2>
+    <div class="projekt" data-r="beruflich">
+      <span class="tag">Beruflich</span>
+      <h3>Vorausentwicklung und Musterbau</h3>
+      <p>Neue Technologien für E-Bike-Systeme bewertet, Sensor- und Kommunikationstechnologien systematisch analysiert und vom CAD-Entwurf bis zur Erprobung am Prototyp durchgezogen. Acht Musterstände aufgebaut, Prototypen umgebaut, verändert und getestet, Fehler früh erkannt und die Anforderungen an die Serie mit dem Entwicklungsteam abgestimmt. Entwicklungspartner für E-Bike-Systeme, 2024 bis 2026.</p>
+    </div>
+    <div class="projekt" data-r="privat">
+      <span class="tag">Studium</span>
+      <h3>Autopipettierroboter</h3>
+      <p>Im Praxissemester komplett selbst entwickelt und aufgebaut, von der Mechanik mit ausgelegten und angesteuerten Linearantrieben über die Elektronik bis zur Software. Biametrics, 2018 bis 2019.</p>
+    </div>
+    <div class="projekt" data-r="privat">
+      <span class="tag">Studium</span>
+      <h3>Rollstuhl-Bewegungstrainer</h3>
+      <p>Bachelorthesis. Hard- und Software eines Prototyps, der sich an den Rollstuhl adaptieren lässt und die Unterschenkel bewegt, um die Blutzirkulation zu fördern, etwa bei Querschnittlähmung. Hochschule Reutlingen.</p>
+    </div>
+    <div class="projekt" data-r="privat">
+      <span class="tag">Privat</span>
+      <h3>Quadrocopter</h3>
+      <p>Quadrocopter selbst gebaut, Rahmen aus dem 3D-Drucker über Simulationen optimiert, Antrieb nach Gewicht, Leistung, Akku und Reichweite ausgelegt. Anschließend die Flugregelung abgestimmt und optimiert.</p>
+    </div>
+    <div class="projekt" data-r="privat">
+      <span class="tag">Privat</span>
+      <h3>Meerwasseraquarium</h3>
+      <p>Komplett selbst geplant, Gestell aus Aluprofilen gebaut, Verrohrung geplant und simuliert, dazu ein Strömungspumpenschwenker mit Riemenantrieb. Die Türen hängen an eigens konstruierten mehrgelenkigen Scharnieren aus dem 3D-Drucker, weil es am Markt keine gibt, die sich auf dem Profil montieren lassen und es dabei verdecken. 40 mm Auskragung, bündig vor dem Profil, öffnen voll auf 90 Grad.</p>
+    </div>
+    <div class="projekt" data-r="privat">
+      <span class="tag">Privat</span>
+      <h3>Camperausbau</h3>
+      <p>Eigener Camperausbau mit selbst entwickeltem Campermodul, in dem das Bordsystem aus dem Nebengewerbe im Einsatz ist.</p>
+    </div>
+    <div class="projekt" data-r="privat">
+      <span class="tag">Privat</span>
+      <h3>3D-Drucker und CNC-Fräse</h3>
+      <p>Einen 3D-Drucker konstruiert und gebaut, aktuell in Entwicklung und Bau eine CNC-Fräse. Konstruktion in Fusion 360.</p>
+    </div>
+  </section>
+
+  <footer>Laurin Obermaier · Kusterdingen · Stand Oktober 2026</footer>
+</div>
+<script>
+  const knoepfe = document.querySelectorAll('.subnav button');
+  function zeige(r) {
+    knoepfe.forEach(k => k.setAttribute('aria-pressed', k.dataset.r === r));
+    document.querySelectorAll('.projekt').forEach(p => p.hidden = p.dataset.r !== r);
+    document.querySelectorAll('section').forEach(s => { if (s.querySelector('.projekt')) s.hidden = !s.querySelector('.projekt:not([hidden])'); });
+    history.replaceState(null, '', '#' + r);
+  }
+  knoepfe.forEach(k => k.addEventListener('click', () => zeige(k.dataset.r)));
+  zeige(location.hash === '#privat' ? 'privat' : 'beruflich');
+</script>
+</body>
+</html>
