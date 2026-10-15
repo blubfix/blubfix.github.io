@@ -16,7 +16,7 @@
 <p class="lead">Ein rundes Smarthome-Bedienteil mit Touch-Display, Drehencoder und LED-Ring auf einem gegossenen Betonsockel. Es steuert Licht, Farbe, Medien und Szenen über Home Assistant und zeigt daneben Live-Daten wie die Auslastung meines Claude-Kontos.</p></div>
 
 <section class="block"><div class="mono">01 Idee</div><h2>Die wichtigsten Funktionen im Raum, ohne Smartphone</h2>
-<p>HomeDial ist ein selbst entworfener Drehregler für mein Smarthome. Er besteht aus einem runden 1,28-Zoll-Touch-Display, einem Drehencoder mit Druckfunktion und einem NeoPixel-Ring, montiert auf einem gegossenen Betonsockel. Die Anbindung an Home Assistant läuft über MQTT mit automatischer Geräteerkennung.</p></section>
+<p>HomeDial ist ein selbst entworfener Drehregler für mein Smarthome. Er besteht aus einem runden 1,28-Zoll-Touch-Display, einem Drehencoder und einem NeoPixel-Ring, montiert auf einem gegossenen Betonsockel. Die Anbindung an Home Assistant läuft über MQTT mit automatischer Geräteerkennung.</p></section>
 
 <section class="block"><div class="mono">02 Bedienung</div><h2>Wischen, drehen, tippen</h2>
 <p>Die Bedienung folgt einem klaren Prinzip: Wischen wechselt die Seite, Drehen verändert den Wert, Tippen in der Mitte schaltet. Sieben Seiten decken Ziffernblatt, Lichthelligkeit, Lichtfarbe, Medienlautstärke, Szenen, Geräteinfo und ein Claude-Dashboard ab, das die 5-Stunden- und Wochenlimits meines Claude-Kontos als Füllstand auf dem Ring anzeigt.</p>
@@ -30,7 +30,7 @@
 <p>Ein begleitender Python-Dienst liest die Claude-Nutzungsdaten aus und veröffentlicht sie per MQTT. Er läuft als LaunchAgent auf dem Mac oder als Docker-Container auf dem NAS. Das Projekt ist so angelegt, dass dieselbe Hardware auch als Thermostat-Dial, Media-Knob oder Fokus-Timer laufen kann.</p></section>
 
 <section class="block"><div class="mono">05 Eckdaten</div><h2>Auf einen Blick</h2><dl class="spec">
-<dt>Hardware</dt><dd>2× ESP32-C3, rundes 1,28-Zoll-Touch-Display, Drehencoder mit Taster, WS2812-Ring, Status-OLED, Betonsockel</dd>
+<dt>Hardware</dt><dd>2× ESP32-C3, rundes 1,28-Zoll-Touch-Display, Drehencoder, WS2812-Ring, Status-OLED, Betonsockel</dd>
 <dt>Firmware</dt><dd>C++, ESP-IDF 5.4, LVGL 9, PlatformIO, eigenes UART-Protokoll, OTA über mDNS</dd>
 <dt>Anbindung</dt><dd>MQTT mit Home-Assistant-Discovery</dd>
 <dt>Begleitdienst</dt><dd>Python, LaunchAgent oder Docker</dd>
