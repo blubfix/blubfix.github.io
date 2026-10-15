@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HomeDial · Laurin Obermaier</title>
+<meta name="description" content="HomeDial, ein rundes Smarthome-Bedienteil mit Touch-Display, Drehencoder und LED-Ring auf zwei ESP32-C3, angebunden an Home Assistant.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt</a>
+<div class="page">
+<div class="bar"><a class="id" href="index.html">Laurin Obermaier</a><nav><a href="index.html">Start</a><a href="projekte.html#privat" aria-current="page">Projekte</a></nav></div>
+<main id="main" class="detail">
+<div class="head"><div class="mono">Projekt · Privat · Smarthome</div><h1>HomeDial</h1>
+<p class="lead">Ein rundes Smarthome-Bedienteil mit Touch-Display, Drehencoder und LED-Ring auf einem gegossenen Betonsockel. Es steuert Licht, Farbe, Medien und Szenen über Home Assistant und zeigt daneben Live-Daten wie die Auslastung meines Claude-Kontos.</p></div>
+
+<section class="block"><div class="mono">01 Idee</div><h2>Die wichtigsten Funktionen im Raum, ohne Smartphone</h2>
+<p>HomeDial ist ein selbst entworfener Drehregler für mein Smarthome. Er besteht aus einem runden 1,28-Zoll-Touch-Display, einem Drehencoder mit Druckfunktion und einem NeoPixel-Ring, montiert auf einem gegossenen Betonsockel. Die Anbindung an Home Assistant läuft über MQTT mit automatischer Geräteerkennung.</p></section>
+
+<section class="block"><div class="mono">02 Bedienung</div><h2>Wischen, drehen, tippen</h2>
+<p>Die Bedienung folgt einem klaren Prinzip: Wischen wechselt die Seite, Drehen verändert den Wert, Tippen in der Mitte schaltet. Sieben Seiten decken Ziffernblatt, Lichthelligkeit, Lichtfarbe, Medienlautstärke, Szenen, Geräteinfo und ein Claude-Dashboard ab, das die 5-Stunden- und Wochenlimits meines Claude-Kontos als Füllstand auf dem Ring anzeigt.</p>
+<p>Der Ring spiegelt dabei immer den aktuellen Kontext: die Lichtfarbe als Füllstand, einen Regenbogen mit Marker für den Farbton und ab 90 % Auslastung einen roten Puls.</p></section>
+
+<section class="block"><div class="mono">03 Technik</div><h2>Zwei ESP32-C3 mit klarer Arbeitsteilung</h2>
+<p>Das System läuft auf zwei ESP32-C3-Boards mit ESP-IDF 5.4 und LVGL 9 in C++. Das Display-Board übernimmt Oberfläche, WLAN und MQTT, das Controller-Board Encoder, Ring und ein kleines Status-OLED. Beide reden über ein eigenes, prüfsummengesichertes UART-Protokoll miteinander.</p>
+<p>Firmware-Updates kommen per OTA über mDNS auf beide Boards, ohne USB. Nach fünf Minuten ohne Bedienung geht das Gerät in einen Standby, in dem Panel, LVGL und WLAN in Sparmodi wechseln und der Ring mit fünf Prozent warmweiß atmet. Alle Helligkeitsübergänge folgen dem Stevens'schen Potenzgesetz, damit sie für das Auge linear wirken.</p></section>
+
+<section class="block"><div class="mono">04 Dienst</div><h2>Nutzungsdaten per MQTT</h2>
+<p>Ein begleitender Python-Dienst liest die Claude-Nutzungsdaten aus und veröffentlicht sie per MQTT. Er läuft als LaunchAgent auf dem Mac oder als Docker-Container auf dem NAS. Das Projekt ist so angelegt, dass dieselbe Hardware auch als Thermostat-Dial, Media-Knob oder Fokus-Timer laufen kann.</p></section>
+
+<section class="block"><div class="mono">05 Eckdaten</div><h2>Auf einen Blick</h2><dl class="spec">
+<dt>Hardware</dt><dd>2× ESP32-C3, rundes 1,28-Zoll-Touch-Display, Drehencoder mit Taster, WS2812-Ring, Status-OLED, Betonsockel</dd>
+<dt>Firmware</dt><dd>C++, ESP-IDF 5.4, LVGL 9, PlatformIO, eigenes UART-Protokoll, OTA über mDNS</dd>
+<dt>Anbindung</dt><dd>MQTT mit Home-Assistant-Discovery</dd>
+<dt>Begleitdienst</dt><dd>Python, LaunchAgent oder Docker</dd>
+</dl><div class="spec-end"></div><a class="more" href="projekte.html#privat">Zurück zu den Projekten</a></section>
+</main>
+<footer><span>Laurin Obermaier · Kusterdingen · Stand Oktober 2026</span><nav><a href="impressum.html">Impressum</a><a href="impressum.html#datenschutz">Datenschutz</a></nav></footer>
+</div>
+</body>
+</html>

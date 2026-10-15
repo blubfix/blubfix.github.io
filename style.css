@@ -59,6 +59,7 @@ a{color:inherit}
 .block>.mono{display:flex;gap:14px;align-items:center;margin-bottom:14px}
 .block>.mono::after{content:"";flex:1;height:1px;background:var(--line)}
 .block h2{font:700 1.9rem/1.12 var(--font-condensed);letter-spacing:-.01em;margin:0 0 16px;max-width:24ch}
+.detail .block p{color:var(--ink-2);max-width:64ch;margin:0 0 12px}
 .lead{font-size:1.28rem;line-height:1.5;color:var(--ink-2);max-width:56ch;margin:0}
 .lead a,.text a{color:var(--accent);font-weight:600}
 .spec{margin:0;display:grid;grid-template-columns:1fr}
